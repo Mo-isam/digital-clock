@@ -19,11 +19,11 @@ function Home() {
         };
     }, [isRunning]);
     function timeformat(milliseconds: number) {
-        let totalsecond = Math.floor(milliseconds / 1000);
-        let milesecond = Math.floor((milliseconds % 1000) / 10);
-        let second = Math.floor(totalsecond % 60);
-        let mints = Math.floor((totalsecond % 3600) / 60);
-        let hours = Math.floor(totalsecond / 3600);
+        const totalsecond = Math.floor(milliseconds / 1000);
+        const milesecond = Math.floor((milliseconds % 1000) / 10);
+        const second = Math.floor(totalsecond % 60);
+        const mints = Math.floor((totalsecond % 3600) / 60);
+        const hours = Math.floor(totalsecond / 3600);
 
         return `${pading(hours)}:${pading(mints)}:${pading(second)}:${pading(
             milesecond

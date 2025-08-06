@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
-import { time } from "console";
 import { useEffect, useState } from "react";
 
 
